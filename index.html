@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 🍔 Navbar -->
+    <header id="header">
+        <nav class="navbar">
+            <a href="#" class="logo">Port<span>folio.</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 1️⃣ Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h3>👋 Hi, I'm</h3>
+            <h1>Your Name</h1>
+            <h2 class="typing-text">And I'm a <span id="typewriter"></span><span class="cursor">|</span></h2>
+            <p>I build beautiful, responsive, and user-friendly websites. Let's create something amazing together.</p>
+            
+            <div class="hero-buttons">
+                <a href="#projects" class="btn primary-btn">View My Work</a>
+                <a href="#" class="btn secondary-btn">Download CV</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <div class="blob-bg"></div>
+            <!-- Profile Image (Replace src with your image inside assets/images/) -->
+            <img src="https://via.placeholder.com/350" alt="Profile Picture" class="floating-img">
+        </div>
+    </section>
+    <!-- 2️⃣ About Section -->
+    <section id="about" class="about section-padding">
+        <h2 class="section-title">About <span>Me</span></h2>
+        
+        <div class="about-container">
+            <!-- Left Side: Image -->
+            <div class="about-img reveal-left">
+                <!-- Replace src with your image -->
+                <img src="https://via.placeholder.com/350x400" alt="About Me">
+            </div>
+            
+            <!-- Right Side: Text & Stats -->
+            <div class="about-text reveal-right">
+                <p>Hello! I am a passionate web developer with a keen eye for design. I love building responsive, accessible, and user-friendly web applications that solve real-world problems. My journey in tech is driven by continuous learning, creativity, and finding optimal solutions.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="50">0</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="2">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="20">0</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        
+        <div class="skills-container">
+            <!-- Left Side: Hard Skills (Progress Bars) -->
+            <div class="hard-skills reveal-left">
+                <h3>Technical Skills</h3>
+                
+                <div class="skill-box">
+                    <span class="skill-name">HTML & CSS</span>
+                    <span class="skill-percent">95%</span>
+                    <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+                </div>
+                
+                <div class="skill-box">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">85%</span>
+                    <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                </div>
+                
+                <div class="skill-box">
+                    <span class="skill-name">React JS</span>
+                    <span class="skill-percent">75%</span>
+                    <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                </div>
+            </div>
+
+            <!-- Right Side: Soft Skills (Icon Grid) -->
+            <div class="soft-skills reveal-right">
+                <h3>Soft Skills</h3>
+                
+                <div class="skill-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-users"></i>
+                        <p>Teamwork</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Problem Solving</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-clock"></i>
+                        <p>Time Management</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-comments"></i>
+                        <p>Communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 2️⃣ About Section -->
+    <section id="about" class="about section-padding">
+        <h2 class="section-title">About <span>Me</span></h2>
+        
+        <div class="about-container">
+            <!-- Left Side: Image -->
+            <div class="about-img reveal-left">
+                <!-- Replace src with your image -->
+                <img src="https://via.placeholder.com/350x400" alt="About Me">
+            </div>
+            
+            <!-- Right Side: Text & Stats -->
+            <div class="about-text reveal-right">
+                <p>Hello! I am a passionate web developer with a keen eye for design. I love building responsive, accessible, and user-friendly web applications that solve real-world problems. My journey in tech is driven by continuous learning, creativity, and finding optimal solutions.</p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="50">0</h3>
+                        <p>Projects Completed</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="2">0</h3>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3 class="counter" data-target="20">0</h3>
+                        <p>Happy Clients</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3️⃣ Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <h2 class="section-title">My <span>Skills</span></h2>
+        
+        <div class="skills-container">
+            <!-- Left Side: Hard Skills (Progress Bars) -->
+            <div class="hard-skills reveal-left">
+                <h3>Technical Skills</h3>
+                
+                <div class="skill-box">
+                    <span class="skill-name">HTML & CSS</span>
+                    <span class="skill-percent">95%</span>
+                    <div class="progress-bar"><div class="progress" data-width="95%"></div></div>
+                </div>
+                
+                <div class="skill-box">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">85%</span>
+                    <div class="progress-bar"><div class="progress" data-width="85%"></div></div>
+                </div>
+                
+                <div class="skill-box">
+                    <span class="skill-name">React JS</span>
+                    <span class="skill-percent">75%</span>
+                    <div class="progress-bar"><div class="progress" data-width="75%"></div></div>
+                </div>
+            </div>
+
+            <!-- Right Side: Soft Skills (Icon Grid) -->
+            <div class="soft-skills reveal-right">
+                <h3>Soft Skills</h3>
+                
+                <div class="skill-grid">
+                    <div class="skill-card">
+                        <i class="fas fa-users"></i>
+                        <p>Teamwork</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <p>Problem Solving</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-clock"></i>
+                        <p>Time Management</p>
+                    </div>
+                    <div class="skill-card">
+                        <i class="fas fa-comments"></i>
+                        <p>Communication</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- 4️⃣ Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <h2 class="section-title">My <span>Projects</span></h2>
+        
+        <!-- Filter Buttons -->
+        <div class="filter-btns">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="app">App</button>
+            <button class="filter-btn" data-filter="design">Design</button>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="project-grid">
+            <!-- Project 1 (Web) -->
+            <div class="project-card reveal-up" data-category="web">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 1">
+                </div>
+                <div class="project-info">
+                    <h3>E-Commerce Website</h3>
+                    <p>A full-stack e-commerce platform with cart and checkout functionality.</p>
+                    <div class="tech-tags">
+                        <span>HTML/CSS</span><span>JS</span><span>React</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn primary-btn btn-sm">Live Demo</a>
+                        <a href="#" class="btn secondary-btn btn-sm"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 (App) -->
+            <div class="project-card reveal-up" data-category="app">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 2">
+                </div>
+                <div class="project-info">
+                    <h3>Weather App</h3>
+                    <p>A mobile-first weather application using OpenWeather API.</p>
+                    <div class="tech-tags">
+                        <span>React Native</span><span>API</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn primary-btn btn-sm">Live Demo</a>
+                        <a href="#" class="btn secondary-btn btn-sm"><i class="fab fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 (Design) -->
+            <div class="project-card reveal-up" data-category="design">
+                <div class="project-img">
+                    <img src="https://via.placeholder.com/400x250" alt="Project 3">
+                </div>
+                <div class="project-info">
+                    <h3>Brand Identity UI</h3>
+                    <p>Modern UI/UX design for a corporate brand using Figma.</p>
+                    <div class="tech-tags">
+                        <span>Figma</span><span>UI/UX</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="btn primary-btn btn-sm">View Case Study</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5️⃣ Experience / Timeline Section -->
+    <section id="experience" class="experience section-padding">
+        <h2 class="section-title">My <span>Journey</span></h2>
+        
+        <!-- Timeline Tabs -->
+        <div class="timeline-tabs">
+            <button class="tab-btn active" data-target="work">Work Experience</button>
+            <button class="tab-btn" data-target="education">Education</button>
+        </div>
+
+        <!-- Work Timeline -->
+        <div class="timeline-container active" id="work">
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Frontend Developer</h3>
+                        <h4>Tech Solutions Ltd.</h4>
+                        <span class="date">2022 - Present</span>
+                        <p>Developed responsive web applications, improved UI/UX, and collaborated with backend teams to integrate APIs.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Junior Web Developer</h3>
+                        <h4>Creative Studio</h4>
+                        <span class="date">2020 - 2022</span>
+                        <p>Built landing pages, fixed bugs, and learned advanced JavaScript concepts and frameworks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Education Timeline -->
+        <div class="timeline-container" id="education">
+            <div class="timeline">
+                <div class="timeline-item reveal-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>BSc in Computer Science</h3>
+                        <h4>University of Technology</h4>
+                        <span class="date">2016 - 2020</span>
+                        <p>Graduated with honors. Specialized in software engineering and web technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 6️⃣ Contact Section (New Modern Design) -->
+    <section id="contact" class="contact section-padding">
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+        
+        <div class="contact-wrapper">
+            <!-- Left Side: Contact Info (Gradient Box) -->
+            <div class="contact-info-card reveal-left">
+                <h3>Contact Information</h3>
+                <p>Fill up the form and I will get back to you within 24 hours.</p>
+                
+                <div class="info-details">
+                    <div class="info-box">
+                        <i class="fas fa-phone-alt"></i>
+                        <span>+880 123 456 7890</span>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-envelope"></i>
+                        <span>hello@yourdomain.com</span>
+                    </div>
+                    <div class="info-box">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+                
+                <div class="contact-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                
+                <!-- Decorative Shapes -->
+                <div class="circle circle-1"></div>
+                <div class="circle circle-2"></div>
+            </div>
+
+            <!-- Right Side: Contact Form (Floating Labels) -->
+            <div class="contact-form-card reveal-right">
+                <form id="contactForm">
+                    <div class="input-box">
+                        <input type="text" id="name" required>
+                        <label>Your Name</label>
+                        <span class="line"></span>
+                    </div>
+                    
+                    <div class="input-box">
+                        <input type="email" id="email" required>
+                        <label>Your Email</label>
+                        <span class="line"></span>
+                    </div>
+                    
+                    <div class="input-box">
+                        <textarea id="message" rows="4" required></textarea>
+                        <label>Your Message</label>
+                        <span class="line"></span>
+                    </div>
+                    
+                    <button type="submit" class="btn primary-btn ripple-btn">
+                        Send Message <i class="fas fa-paper-plane" style="margin-left: 8px;"></i>
+                    </button>
+                    
+                    <p id="success-msg" class="success-msg">Message sent successfully! 🚀</p>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- 💡 Bonus Section: Services (What I Offer) -->
+    <section id="services" class="services section-padding">
+        <h2 class="section-title">What I <span>Offer</span></h2>
+        
+        <div class="services-container">
+            <!-- Service Card 1 -->
+            <div class="service-card reveal-up">
+                <div class="service-icon">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Web Development</h3>
+                <p>Building responsive, fast, and scalable websites using modern technologies to deliver the best user experience.</p>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card reveal-up">
+                <div class="service-icon">
+                    <i class="fas fa-palette"></i>
+                </div>
+                <h3>UI/UX Design</h3>
+                <p>Crafting beautiful, intuitive, and user-centric interfaces focusing on smooth interactions and aesthetics.</p>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card reveal-up">
+                <div class="service-icon">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>App Development</h3>
+                <p>Developing seamless cross-platform mobile applications that look native and perform flawlessly on any device.</p>
+            </div>
+        </div>
+    </section>
+    <!-- 7️⃣ Footer (Modern Multi-Column Design) -->
+    <footer class="modern-footer">
+        <div class="footer-container">
+            <!-- Column 1: Brand & Bio -->
+            <div class="footer-col brand-col reveal-up">
+                <a href="#" class="logo">Port<span>folio.</span></a>
+                <p>Designing and building digital experiences with passion, precision, and a lot of coffee.</p>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div class="footer-col links-col reveal-up" style="transition-delay: 0.1s;">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#hero"><i class="fas fa-chevron-right"></i> Home</a></li>
+                    <li><a href="#about"><i class="fas fa-chevron-right"></i> About Me</a></li>
+                    <li><a href="#services"><i class="fas fa-chevron-right"></i> Services</a></li>
+                    <li><a href="#projects"><i class="fas fa-chevron-right"></i> Projects</a></li>
+                </ul>
+            </div>
+
+            <!-- Column 3: Contact Info -->
+            <div class="footer-col contact-col reveal-up" style="transition-delay: 0.2s;">
+                <h3>Contact Info</h3>
+                <div class="footer-contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>hello@yourdomain.com</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+880 123 456 7890</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Dhaka, Bangladesh</span>
+                </div>
+            </div>
+
+            <!-- Column 4: Newsletter -->
+            <div class="footer-col newsletter-col reveal-up" style="transition-delay: 0.3s;">
+                <h3>Newsletter</h3>
+                <p>Subscribe to get the latest updates and tech tips.</p>
+                <form class="newsletter-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Copyright -->
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Name. All Rights Reserved. Built with ❤️</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
