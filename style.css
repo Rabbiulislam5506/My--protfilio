@@ -1,12 +1,12 @@
-﻿/* --- Base Setup & Variables --- */
+﻿﻿/* --- Base Setup & Variables --- */
 :root {
-    --bg-color: #fafafa;
-    --text-dark: #2d3436;
-    --text-light: #636e72;
-    --lavender: #E6E6FA;
-    --mint: #B4F8C8;
-    --peach: #FFDAC1;
-    --white: #ffffff;
+    --bg-color: #fff4e6;
+    --text-dark: #24113f;
+    --text-light: #665b78;
+    --lavender: #d9d2ff;
+    --mint: #8ff0d0;
+    --peach: #ffb86b;
+    --white: #fffaf5;
     --transition: 0.3s ease-in-out;
 }
 
@@ -55,7 +55,7 @@ header.sticky {
 }
 
 .logo span {
-    color: #a29bfe; /* Darker lavender for contrast */
+    color: #ff4f81;
 }
 
 .nav-links {
@@ -99,7 +99,7 @@ header.sticky {
     align-items: center;
     justify-content: space-between;
     padding: 0 8%;
-    background: linear-gradient(135deg, rgba(230,230,250,0.4) 0%, rgba(180,248,200,0.2) 100%);
+    background: linear-gradient(135deg, rgba(255,79,129,0.14) 0%, rgba(143,240,208,0.28) 52%, rgba(255,184,107,0.22) 100%);
 }
 
 .hero-content {
@@ -124,7 +124,7 @@ header.sticky {
 }
 
 #typewriter {
-    color: #ffb88c; /* Peach dark variant */
+    color: #ff4f81;
     font-weight: 700;
 }
 
@@ -194,14 +194,14 @@ header.sticky {
 
 .social-icons a:hover {
     transform: translateY(-5px);
-    color: #a29bfe;
+    color: #ff4f81;
 }
 
 /* Hero Image & Blob */
 .hero-image {
     position: relative;
     width: 400px;
-    height: 400px;
+    height: 460px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -221,7 +221,9 @@ header.sticky {
 
 .floating-img {
     width: 80%;
-    border-radius: 50%;
+    height: 92%;
+    object-fit: cover;
+    border-radius: 24px;
     border: 8px solid var(--white);
     box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     animation: float 3s ease-in-out infinite;
@@ -246,7 +248,7 @@ header.sticky {
 
 @keyframes pulseBlob {
     0% { transform: scale(0.9); background: var(--peach); }
-    100% { transform: scale(1.1); background: var(--lavender); }
+    100% { transform: scale(1.1); background: #ff4f81; }
 }
 
 /* --- Responsive for Mobile --- */
@@ -270,7 +272,7 @@ header.sticky {
     .hero { flex-direction: column; text-align: center; justify-content: center; padding-top: 100px; }
     .hero-content { margin-bottom: 40px; }
     .hero-buttons, .social-icons { justify-content: center; }
-    .hero-image { width: 300px; height: 300px; }
+    .hero-image { width: 300px; height: 370px; }
 }
 /* --- General Section Styles --- */
 .section-padding {
@@ -285,7 +287,7 @@ header.sticky {
 }
 
 .section-title span {
-    color: #a29bfe; /* Lavender highlight */
+    color: #ff4f81;
     border-bottom: 3px solid var(--mint);
 }
 
@@ -400,7 +402,7 @@ header.sticky {
 
 .progress {
     height: 100%;
-    background: linear-gradient(90deg, #a29bfe, var(--mint));
+    background: linear-gradient(90deg, #ff4f81, #6d5dfc, var(--mint));
     border-radius: 5px;
     width: 0; /* JS দিয়ে scroll করলে ফুল হবে */
     transition: width 1.5s ease-in-out;
@@ -425,7 +427,7 @@ header.sticky {
 
 .skill-card i {
     font-size: 36px;
-    color: #a29bfe;
+    color: #ff4f81;
     margin-bottom: 15px;
     transition: transform 0.5s ease;
 }
@@ -625,7 +627,7 @@ header.sticky {
     background: var(--mint);
     border-color: var(--mint);
     color: var(--text-dark);
-    box-shadow: 0 5px 15px rgba(180,248,200,0.5);
+    box-shadow: 0 5px 15px rgba(143,240,208,0.5);
 }
 
 .timeline-container {
@@ -694,7 +696,7 @@ header.sticky {
     background: var(--bg-color);
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    border-top: 4px solid #a29bfe;
+    border-top: 4px solid #ff4f81;
 }
 
 .timeline-content h3 {
@@ -769,7 +771,7 @@ header.sticky {
 /* Left Side: Info Card with Gradient */
 .contact-info-card {
     flex: 1;
-    background: linear-gradient(135deg, #a29bfe 0%, var(--mint) 100%);
+    background: linear-gradient(135deg, #ff4f81 0%, #6d5dfc 48%, var(--mint) 100%);
     padding: 50px 40px;
     position: relative;
     overflow: hidden;
@@ -909,7 +911,7 @@ header.sticky {
     left: 0;
     width: 0;
     height: 2px;
-    background: #a29bfe;
+    background: #ff4f81;
     transition: 0.4s ease all;
 }
 
@@ -927,7 +929,7 @@ header.sticky {
 .input-box textarea:valid ~ label {
     top: -20px;
     font-size: 13px;
-    color: #a29bfe;
+    color: #ff4f81;
     font-weight: 600;
 }
 
@@ -1017,7 +1019,7 @@ header.sticky {
     width: 80px;
     height: 80px;
     background: var(--white);
-    color: #a29bfe;
+    color: #ff4f81;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -1089,7 +1091,7 @@ header.sticky {
     bottom: 0;
     width: 40px;
     height: 3px;
-    background: #a29bfe;
+    background: #ff4f81;
     border-radius: 5px;
 }
 
@@ -1151,7 +1153,7 @@ header.sticky {
 
 .links-col ul li a i {
     font-size: 12px;
-    color: #a29bfe;
+    color: #ff4f81;
     transition: transform 0.3s ease;
 }
 
@@ -1173,7 +1175,7 @@ header.sticky {
 }
 
 .footer-contact-item i {
-    color: #a29bfe;
+    color: #ff4f81;
     font-size: 18px;
 }
 
@@ -1194,7 +1196,7 @@ header.sticky {
 }
 
 .newsletter-form:focus-within {
-    border-color: #a29bfe;
+    border-color: #ff4f81;
     box-shadow: 0 0 10px rgba(162, 155, 254, 0.1);
 }
 
@@ -1209,7 +1211,7 @@ header.sticky {
 }
 
 .newsletter-form button {
-    background: #a29bfe;
+    background: #ff4f81;
     color: var(--white);
     border: none;
     width: 45px;
