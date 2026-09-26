@@ -787,7 +787,7 @@ header.sticky {
 /* Timeline Content */
 .timeline-content {
     padding: 20px;
-    background: linear-gradient(135deg, #430303 0%, #f3f0ff 100%);
+    background: linear-gradient(135deg, #993e3e 0%, #f3f0ff 100%);
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
     border-top: 4px solid #b65ce6;
