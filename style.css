@@ -859,7 +859,7 @@ header.sticky {
     background: var(--white);
     border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    box-shadow: 0 15px 40px rgba(230, 120, 120, 0.08);
 }
 
 /* Left Side: Info Card with Gradient */
