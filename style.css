@@ -1,12 +1,21 @@
 ﻿﻿/* --- Base Setup & Variables --- */
 :root {
     --bg-color: #fff4e6;
-    --text-dark: #24113f;
+    --text-dark: #301851;
     --text-light: #665b78;
     --lavender: #d9d2ff;
     --mint: #8ff0d0;
     --peach: #ffb86b;
-    --white: #fffaf5;
+    --white: #dbc8c4;
+    --page-background:
+        radial-gradient(ellipse 18rem 10rem at 0% 27%, #080b06 0 35%, transparent 39%),
+        radial-gradient(ellipse 11rem 15rem at 100% 78%, #080b06 0 34%, transparent 38%),
+        radial-gradient(ellipse 7rem 4rem at 95% 22%, #080b06 0 32%, transparent 37%),
+        radial-gradient(ellipse 5rem 8rem at 7% 82%, #080b06 0 30%, transparent 35%),
+        radial-gradient(circle at 12% 21%, #080b06 0 5px, transparent 6px),
+        radial-gradient(circle at 18% 38%, #080b06 0 3px, transparent 4px),
+        radial-gradient(circle at 87% 68%, #080b06 0 4px, transparent 5px),
+        radial-gradient(circle at 78% 86%, #080b06 0 3px, transparent 4px);
     --transition: 0.3s ease-in-out;
 }
 
@@ -19,7 +28,10 @@
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: #f0edcc;
+    background-image: var(--page-background);
+    background-attachment: fixed;
+    background-size: 100vw 100vh;
     color: var(--text-dark);
 }
 
@@ -55,7 +67,7 @@ header.sticky {
 }
 
 .logo span {
-    color: #ff4f81;
+    color: #ba54c3;
 }
 
 .nav-links {
@@ -99,7 +111,7 @@ header.sticky {
     align-items: center;
     justify-content: space-between;
     padding: 0 8%;
-    background: linear-gradient(135deg, rgba(255,79,129,0.14) 0%, rgba(143,240,208,0.28) 52%, rgba(255,184,107,0.22) 100%);
+    background: transparent;
 }
 
 .hero-content {
@@ -124,7 +136,7 @@ header.sticky {
 }
 
 #typewriter {
-    color: #ff4f81;
+    color: #7a126c;
     font-weight: 700;
 }
 
@@ -194,7 +206,7 @@ header.sticky {
 
 .social-icons a:hover {
     transform: translateY(-5px);
-    color: #ff4f81;
+    color: #4fe5ff;
 }
 
 /* Hero Image & Blob */
@@ -248,7 +260,7 @@ header.sticky {
 
 @keyframes pulseBlob {
     0% { transform: scale(0.9); background: var(--peach); }
-    100% { transform: scale(1.1); background: #ff4f81; }
+    100% { transform: scale(1.1); background: #83a965; }
 }
 
 /* --- Responsive for Mobile --- */
@@ -287,13 +299,13 @@ header.sticky {
 }
 
 .section-title span {
-    color: #ff4f81;
+    color: #2b325c;
     border-bottom: 3px solid var(--mint);
 }
 
 /* --- About Section --- */
 .about {
-    background-color: var(--white);
+    background: transparent;
 }
 
 .about-container {
@@ -402,7 +414,7 @@ header.sticky {
 
 .progress {
     height: 100%;
-    background: linear-gradient(90deg, #ff4f81, #6d5dfc, var(--mint));
+    background: linear-gradient(90deg, #58955f, #6d5dfc, var(--mint));
     border-radius: 5px;
     width: 0; /* JS দিয়ে scroll করলে ফুল হবে */
     transition: width 1.5s ease-in-out;
@@ -427,7 +439,7 @@ header.sticky {
 
 .skill-card i {
     font-size: 36px;
-    color: #ff4f81;
+    color: #521c74;
     margin-bottom: 15px;
     transition: transform 0.5s ease;
 }
@@ -471,7 +483,7 @@ header.sticky {
 }
 /* --- Projects Section --- */
 .projects {
-    background-color: var(--bg-color);
+    background: transparent;
 }
 
 /* Filter Buttons */
@@ -601,7 +613,7 @@ header.sticky {
 
 /* --- Experience / Timeline Section --- */
 .experience {
-    background-color: var(--white);
+    background: transparent;
 }
 
 /* Tabs */
@@ -696,7 +708,7 @@ header.sticky {
     background: var(--bg-color);
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    border-top: 4px solid #ff4f81;
+    border-top: 4px solid #d34fff;
 }
 
 .timeline-content h3 {
@@ -755,7 +767,7 @@ header.sticky {
 }
 /* --- New Modern Contact Section --- */
 .contact {
-    background-color: var(--bg-color);
+    background: transparent;
 }
 
 .contact-wrapper {
@@ -771,7 +783,7 @@ header.sticky {
 /* Left Side: Info Card with Gradient */
 .contact-info-card {
     flex: 1;
-    background: linear-gradient(135deg, #ff4f81 0%, #6d5dfc 48%, var(--mint) 100%);
+    background: linear-gradient(135deg, #844fff 0%, #6d5dfc 48%, var(--mint) 100%);
     padding: 50px 40px;
     position: relative;
     overflow: hidden;
@@ -929,7 +941,7 @@ header.sticky {
 .input-box textarea:valid ~ label {
     top: -20px;
     font-size: 13px;
-    color: #ff4f81;
+    color: #5eff4f;
     font-weight: 600;
 }
 
@@ -967,7 +979,7 @@ header.sticky {
 }
 /* --- Bonus Section: Services --- */
 .services {
-    background-color: var(--white);
+    background: transparent;
 }
 
 .services-container {
@@ -1019,7 +1031,7 @@ header.sticky {
     width: 80px;
     height: 80px;
     background: var(--white);
-    color: #ff4f81;
+    color: #ffc14f;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -1059,7 +1071,7 @@ header.sticky {
 }
 /* --- Modern Footer Section --- */
 .modern-footer {
-    background: var(--white);
+    background: transparent;
     padding-top: 80px;
     border-top: 1px solid rgba(0,0,0,0.05);
     position: relative;
@@ -1091,7 +1103,7 @@ header.sticky {
     bottom: 0;
     width: 40px;
     height: 3px;
-    background: #ff4f81;
+    background: #441156;
     border-radius: 5px;
 }
 
@@ -1153,7 +1165,7 @@ header.sticky {
 
 .links-col ul li a i {
     font-size: 12px;
-    color: #ff4f81;
+    color: #190209;
     transition: transform 0.3s ease;
 }
 
@@ -1175,7 +1187,7 @@ header.sticky {
 }
 
 .footer-contact-item i {
-    color: #ff4f81;
+    color: #4ffff6;
     font-size: 18px;
 }
 
@@ -1196,7 +1208,7 @@ header.sticky {
 }
 
 .newsletter-form:focus-within {
-    border-color: #ff4f81;
+    border-color: #554fff;
     box-shadow: 0 0 10px rgba(162, 155, 254, 0.1);
 }
 
@@ -1211,7 +1223,7 @@ header.sticky {
 }
 
 .newsletter-form button {
-    background: #ff4f81;
+    background: #25171b;
     color: var(--white);
     border: none;
     width: 45px;
@@ -1233,7 +1245,7 @@ header.sticky {
 .footer-bottom {
     text-align: center;
     padding: 25px 0;
-    background: var(--bg-color);
+    background: transparent;
     border-top: 1px solid rgba(0,0,0,0.05);
 }
 
